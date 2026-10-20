@@ -131,7 +131,7 @@ export function errorPage(
   opts: { siteTitle?: string; oauth_login_url?: string } = {}
 ): Response {
   const lang = pickLang(req);
-  const site = esc(opts.siteTitle ?? "欧小新の云盘");
+  const site = esc(opts.siteTitle ?? "cloud-r2pan");
   const icons: Record<number, string> = {
     401: "🔐",
     403: "🚫",
